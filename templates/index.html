@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{#{% load statis_tag %}#}
+<!--[if lt IE 7 ]>
+<html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>郭志华 - Yesterday you said tomorrow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{% static "./images/favicon/favicon.ico" %}" type="image/x-icon"/>
+    <!--main style-->
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/bootstrap.css" %}">
+{#    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/bootstrap.css" %}">#}
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/style.css" %}">
+    <!--background slider style-->
+    <link rel="stylesheet" type="text/css" href="{% static "css/slideshow.css" %}">
+
+    <link rel="stylesheet" type="text/css" href={% static "js/animate/css/component.css" %}/>
+
+    <!--google font style-->
+    <!--<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300'-->
+          <!--rel='stylesheet' type='text/css'>-->
+    <!--font-family: 'Open Sans', sans-serif;-->
+    <!-- font css style-->
+    <!--<link rel="stylesheet" href="css/font-awesome.css">-->
+    <link rel="stylesheet" href="{% static "fonts/font-awesome/css/font-awesome.css" %}"/>
+    <!--for slider style-->
+
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="{% static "css/fallback.css" %}"/>
+    </noscript>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="./css/fallback.css"/>
+    <![endif]-->
+</head>
+<body>
+<!--wrapper start-->
+<div class="wrapper" id="wrapper">
+    <header>
+        <!--banner start-->
+        <div class="banner row " id="banner">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd " style="height:100%" id="large-header">
+                <!--background slide show start-->
+                <canvas id="demo-canvas"></canvas>
+                <!--<ul class="cb-slideshow">-->
+                <!--<li><img src="images/bg4.jpg"></li>-->
+                <!--<li><img src="images/bg2.jpg"></li>-->
+                <!--<li><img src="images/bg3.jpg"></li>-->
+
+                <!--</ul>-->
+                <!--background slide show end-->
+            </div>
+        </div>
+        <!--banner end-->
+        <div class="bannerText container">
+            <h1> 郭 志 华</h1><br>
+            <h2>Back-End Engineer</h2>
+        </div>
+        <!--menu start-->
+        <div class="menu">
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <div class="navwrapper">
+                        <div class="navbar navbar-inverse navbar-static-top">
+                            <div class="container">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                            data-target=".navbar-collapse"><span class="icon-bar"></span> <span
+                                            class="icon-bar"></span> <span class="icon-bar"></span></button>
+                                    <a class="navbar-brand" href="#">Menu</a></div>
+                                <div class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="menuItem active"><a href="#wrapper">首页</a></li>
+                                        <li class="menuItem"><a href="#aboutme">基本资料</a></li>
+                                        <li class="menuItem"><a href="#technical">专业技能</a></li>
+                                        <li class="menuItem"><a href="#exprience">工作经验</a></li>
+                                        <li class="menuItem"><a href="#education">自我描述</a></li>
+                                        <li class="menuItem"><a href="#protfolio">项目</a></li>
+                                        <li class="menuItem"><a href="#contact">联系方式</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Navbar -->
+                </div>
+            </div>
+        </div>
+        <!--menu end-->
+    </header>
+    <!--about me start-->
+    <section class="aboutme" id="aboutme">
+        <div class="container">
+            <div class="heading">
+                <h2>基本资料</h2><br>
+                <p>谋生，亦谋爱</p>
+            </div>
+            <div class="row">
+                <div class=" col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                    <h3>郭志华</h3>
+                    <h4 class="subHeading">Back-End Engineer</h4>
+                    <p>
+                        我为了1%的细节通宵达旦，在让我满意之前绝不放弃最后一点改进。</p>
+                    <p>
+                        2年python/django开发经验，云计算。优秀毕业论文。熟悉使用Mac OS X 和linux。数据库擅长mysql、mongo和redis。</p>
+                    <p class="smLine">工作性质：全职  </p>
+                    <p class="smLine">求职岗位：后台开发工程师（python） </p>
+                    <p class="smLine">期望薪资：12k ~ 20k </p>
+                    <p class="smLine">期望地点: 深圳、厦门 </p>
+                    <p class="smLine">常用开发工具: vim / PyCharm / GitHub / Chrome / Postman </p>
+
+                    <p>其他信息：可自带Macbook电脑办公 </p>
+                    </div>
+                    <!--<a href="#" class="bntDownload">下载简历</a></div>-->
+                <!--<div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 proPic"><img-->
+                        <!--src="images/touxiang2.png" width="250" height="auto" alt="" class="img-circle topmar"></div>-->
+            </div>
+        </div>
+    </section>
+    <!--about me end-->
+    <!--technical start-->
+    <section class="technical" id="technical">
+        <div class="container">
+            <div class="heading">
+                <h2>专业技能</h2><br>
+                <p>工欲善其事，必先利其器</p>
+            </div>
+            <div class="row">
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                    <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"><span class="chart skilBg"
+                                                                                    data-percent="60"> <span
+                            class="percent"></span> </span>
+                        <h4>python</h4>
+                        <!--<p>利用DIV+CSS快速构建网站框架，熟悉HTML5新特性。</p>-->
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                    <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"><span class="chart skilBg"
+                                                                                    data-percent="50"> <span
+                            class="percent"></span> </span>
+                        <h4>HTML / HTML 5</h4>
+                        <!--<p>熟悉常见网页特效，熟悉Canvas。</p>-->
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                    <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"><span class="chart skilBg"
+                                                                                    data-percent="70"> <span
+                            class="percent"></span> </span>
+                        <h4>Djnago</h4>
+                        <!--<p>基于原生JavaScript编程，熟悉ECMAScript 6语法</p>-->
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                    <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"><span class="chart skilBg"
+                                                                                    data-percent="75"> <span
+                            class="percent"></span> </span>
+                        <h4>Linux</h4>
+                        <!--<p>能基于JQuery开发插件，对项目JS模块化管理。</p>-->
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                    <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"><span class="chart skilBg"
+                                                                                    data-percent="50"> <span
+                            class="percent"></span> </span>
+                        <h4>Redis</h4>
+                        <!--<p>能使用Backbone实现前端项目MVC解耦，熟悉Restful风格。</p>-->
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                    <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"><span class="chart skilBg"
+                                                                                    data-percent="40"> <span
+                            class="percent"></span> </span>
+                        <h4>Javescript</h4>
+                        <!--<p>能使用AngularJS完成简单的数据双向绑定。</p>-->
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                    <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"><span class="chart skilBg"
+                                                                                    data-percent="70"> <span
+                            class="percent"></span> </span>
+                        <h4>Mongo</h4>
+                        <!--<p>熟悉Java语法，了解Servlet,能用Java独立开发WEB项目。</p>-->
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                    <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"><span class="chart skilBg"
+                                                                                    data-percent="75"> <span
+                            class="percent"></span> </span>
+                        <h4>mysql</h4>
+                        <!--<p>使用SSH开发过企业项目，使用JFinal开发过博客。</p>-->
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                    <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"><span class="chart skilBg"
+                                                                                    data-percent="40"> <span
+                            class="percent"></span> </span>
+                        <h4>openstack</h4>
+                        <!--<p>了解Hadoop，对HBase有深入理解，研究过HBase优化。</p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--technical end-->
+    <!--exprience start-->
+    <section class="exprience" id="exprience">
+        <div class="container">
+            <div class="heading">
+                <h2>工作经验</h2>
+                <br>
+                <p>但行好事，莫问前程</p>
+            </div>
+            <div class="row workDetails">
+                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                    <div class="workYear">2015-08<br>
+                        至今
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+                    <div class="arrowpart"></div>
+                    <div class="exCon">
+                        <h4>上海意派信息科技有限公司 - 上海市</h4>
+                        <h5>后端开发工程师（django）</h5>
+                        <p>
+                        该项目的后台使用django。该项目涉及技术较广，web-server使用nginx，数据库不仅使用了传统的关系型数据库mysql还使用近年来较热的noSql数据库mongo和key-value数据库redis。
+												对于响应时间长的任务，我们采取异步的方式处理，例如：我们有提供作品打包服务，该服务需要超过10秒的时间执行，所以我们使用消息队列rabbitmq。
+											    对于网站内的搜索，我们使用阿里提供的opensearch
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row workDetails">
+                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                    <div class="workYear">2015-08<br>
+                        2014-08
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+                    <div class="arrowpart"></div>
+                    <div class="exCon">
+                        <h4>上海有云信息技术有限公司 － 上海市</h4>
+                        <h5>后端开发工程师(openstack)</h5>
+                        <p>
+                            项目前期我的主要工作是开发报表模块，中期开发了趋势统计、邮件发送以及告警通知等功能。
+                            后期主要研究openstack的horizon组件，对产品的管理平台进行开发，。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row workDetails">
+                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                    <div class="workYear">2014-01<br>
+                        2015-06
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+                    <div class="arrowpart"></div>
+                    <div class="exCon">
+                        <h4>福建师范大学云计算实验室 - 福建 福州</h4>
+                        <h5>openstack开发</h5>
+                        <p>
+                            该项目是我在校期间申请的省级大学校创新项目，亦是本人的毕业设计。项目的整体思路是使用监控ceilometer收集云平台内的虚拟机带宽使用
+                            情况，使用算法对带宽进行重新计算以提高带宽的利用率，使用Open vSwitch将计算好的带宽应用到虚拟机网口上。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--exprience end-->
+    <!--education start-->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="heading">
+                <h2>自我描述</h2><br>
+                <p>南风知我意，吹梦到西洲</p>
+            </div>
+            <div class="row workDetails">
+                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                    <div class="workYear">我的大学</div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+                    <div class="arrowpart"></div>
+                    <div class="exCon">
+                        <h4>福建师范大学云计算实验室</h4>
+                        <h5>初识linux</h5>
+                        <p>
+                           网络工程专业的我本应该从事网络相关工作，大二下学期阴差阳错参加学校的云计算小组。开始接触linux和openstack。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row workDetails">
+                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                    <div class="workYear">初入社会</div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+                    <div class="arrowpart"></div>
+                    <div class="exCon">
+                        <h4>上海有云信息技术有限公司</h4>
+                        <h5>深入学习python、openstack</h5>
+                        <p>
+                            因为学校的云计算小组，有幸来到上海有云公司实习。这是一家创业的新公司，公司产品的功能的迭代速度大家都懂的～～～
+                            在这期间基本都是7点半起床上班，每天晚上9点下班，11点休息算早的，还没毕业就感受到了职场的压力（当时的我绝对可以说BAT 6*9算啥啊，想想那时候的日子真是太惨了）。
+                            压力归压力，那段时间对我的提升还是非常大的，在职期间从python后台模块（报表模块、邮件发送和告警通知等等）一直做到了管理台（对horizon进行二次开发）。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row workDetails">
+                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                    <div class="workYear">进军H5编辑器</div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+                    <div class="arrowpart"></div>
+                    <div class="exCon">
+                        <h4>上海意派信息技术有限公司</h4>
+                        <h5>深入学习django、mongo、redis等等</h5>
+                        <p>
+                            首先能在这家技术牛人聚集的公司上班，我感到非常幸运。这里有携程的技术主管兼职，有果库的技术主管兼职，
+                            有眼中一切皆数据的技术主管（python开发经验超过15年，经常听他吹大学毕业后在上海组织python爱好者讨论技术等等。
+                            在这里我基本学到了互联网公司一般会使用的技术，nginx、redis、mongo、mysql以及rabbitmq等等。
+                            学会提交github代码后自动更新线上代码，学会写各种一键发布一键更新脚本。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--education end-->
+    <!--protfolio start-->
+    <section class="protfolio" id="protfolio">
+        <div class="container">
+            <div class="heading">
+                <h2>项目</h2><br>
+                <p>心有猛虎，细嗅蔷薇</p>
+            </div>
+            <div class="portfolioFilter">
+                <ul>
+                    <li><a href="javascript:;" data-filter="*" class="current">全部</a></li>
+                    <li><a href="javascript:;" data-filter=".photos">sdk</a></li>
+                    <!--<li><a href="javascript:;" data-filter=".branding">特效</a></li>-->
+                    <li><a href="javascript:;" data-filter=".illustration">项目</a></li>
+                    <li><a href="javascript:;" data-filter=".illustration">后端</a></li>
+                </ul>
+            </div>
+            <ul class="portfolioContainer row">
+                <li class="photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="lightCon"><span class="hoverBox"> <span class="smallIcon">
+                        <a rel="lightbox-demo" href="images/portfolio/big/1.jpg" title="Project Title1"
+                           class="zoom lb lb_warsaw1">
+                            <i class="fa fa-eye fa-2x"></i></a>
+                        <a href="https://github.com/guozhihua12/" title="Project Link" target="_blank"
+                           class="linKed">
+                            <i class="fa fa-link fa-2x"></i></a> </span> </span> <img
+                            src="{% static "images/image.png" %}" alt=""></div>
+                </li>
+                <li class="branding illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="lightCon"><span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo"
+                                                                                              href="{% static "images/portfolio/big/2.jpg" %}"
+                                                                                              title="Project Title2"
+                                                                                              class="zoom lb lb_warsaw1"><i
+                            class="fa fa-search fa-2x"></i></a> <a href="https://github.com/guozhihua12/"
+                                                                   title="Project Link" target="_blank"
+                                                                   class="linKed"><i
+                            class="fa fa-link fa-2x"></i></a> </span> </span> <img
+                            src="{% static "images/2.png" %}" alt=""></div>
+                </li>
+                <li class="illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="lightCon"><span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo"
+                                                                                              href="{% static "images/portfolio/big/3.jpg" %}"
+                                                                                              title="Project Title3"
+                                                                                              class="zoom lb lb_warsaw1"><i
+                            class="fa fa-search fa-2x"></i></a> <a href="https://github.com/guozhihua12/"
+                                                                   title="Project Link" target="_blank"
+                                                                   class="linKed"><i
+                            class="fa fa-link fa-2x"></i></a> </span> </span> <img
+                            src="{% static "images/3.png" %}" alt=""></div>
+                </li>
+                <li class="branding illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="lightCon"><span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo"
+                                                                                              href="images/portfolio/big/4.jpg"
+                                                                                              title="Project Title4"
+                                                                                              class="zoom lb lb_warsaw1"><i
+                            class="fa fa-search fa-2x"></i></a> <a href="https://github.com/guozhihua12/"
+                                                                   title="Project Link" target="_blank"
+                                                                   class="linKed"><i
+                            class="fa fa-link fa-2x"></i></a> </span> </span> <img
+                            src="{% static "images/4.png" %}" alt=""></div>
+                </li>
+                <li class="illustration photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="lightCon"><span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo"
+                                                                                              href="images/portfolio/big/5.jpg"
+                                                                                              title="Project Title5"
+                                                                                              class="zoom lb lb_warsaw1"><i
+                            class="fa fa-search fa-2x"></i></a> <a href="https://github.com/guozhihua12/"
+                                                                   title="Project Link" target="_blank"
+                                                                   class="linKed"><i
+                            class="fa fa-link fa-2x"></i></a> </span> </span> <img
+                            src="{% static "images/5.png" %}" alt=""></div>
+                </li>
+                <li class="branding photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="lightCon"><span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo"
+                                                                                              href="images/portfolio/big/6.jpg"
+                                                                                              title="Project Title6"
+                                                                                              class="zoom lb lb_warsaw1"><i
+                            class="fa fa-search fa-2x"></i></a> <a href="https://github.com/guozhihua12/"
+                                                                   title="Project Link" target="_blank"
+                                                                   class="linKed"><i
+                            class="fa fa-link fa-2x"></i></a> </span> </span> <img
+                            src="{% static "images/6.png" %}" alt=""></div>
+                </li>
+                <li class="illustration photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="lightCon"><span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo"
+                                                                                              href="images/portfolio/big/7.jpg"
+                                                                                              title="Project Title7"
+                                                                                              class="zoom lb lb_warsaw1"><i
+                            class="fa fa-search fa-2x"></i></a> <a href="https://github.com/guozhihua12/"
+                                                                   title="Project Link" target="_blank"
+                                                                   class="linKed"><i
+                            class="fa fa-link fa-2x"></i></a> </span> </span> <img
+                            src="{% static "images/7.png" %}" alt=""></div>
+                </li>
+                <li class="branding col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="lightCon"><span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo"
+                                                                                              href="images/portfolio/big/8.jpg"
+                                                                                              title="Project Title8"
+                                                                                              class="zoom lb lb_warsaw1"><i
+                            class="fa fa-search fa-2x"></i></a> <a href="https://github.com/guozhihua12/"
+                                                                   title="Project Link" target="_blank"
+                                                                   class="linKed"><i
+                            class="fa fa-link fa-2x"></i></a> </span> </span> <img
+                            src="{% static "images/8.png" %}" alt=""></div>
+                </li>
+            </ul>
+            <div class="portfolioMore">
+                <a href="http://www.github.com/guozhihua12" target="_blank" class="bntDownload">更 多</a>
+            </div>
+        </div>
+    </section>
+    <!--protfolio end-->
+    <!--contact start-->
+    <section class="contactDetails" id="contact">
+        <div class="container">
+            <!--contact info start-->
+            <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
+                <h4>联系方式</h4>
+                <p><i class="fa fa-map-marker fa-lg"></i> 上海市长宁区仙霞路321号百科苑大楼 </p>
+                <p><i class="fa fa-mobile fa-lg"></i> +86 17721246491</p>
+                <p><i class="fa fa-envelope-o "></i> <a
+                        href="mailto:312736700@qq.com">312736700@qq.com</a></p>
+                <p><i class="fa fa-link "></i> <a href="http://www.guozhihua.cc">www.guozhihua.cc</a></p>
+            </div>
+            <!--contact info end-->
+            <!--contact form start-->
+            <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 conForm">
+                <h4>站内信</h4>
+                <div id="message"></div>
+                <form method="post" action="php/contact.php" name="cform" id="cform">
+                    <input name="name" id="name" type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6"
+                           placeholder="昵称...">
+                    <input name="email" id="email" type="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 noMarr"
+                           placeholder="电子邮件...">
+                    <textarea name="comments" id="comments" cols="" rows=""
+                              class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="消息内容..."></textarea>
+                    <input type="submit" id="submit" name="send" class="submitBnt" value="发 送">
+                    <div id="simple-msg"></div>
+                </form>
+            </div>
+            <!--contact form end-->
+        </div>
+    </section>
+    <!--contact end-->
+    <!--footer start-->
+    <section class="footer" id="footer">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
+                <!--<li><a href="#"><i class="fa fa-qq fa-2x"></i></a></li>-->
+                <!--<li><a href="#"><i class="fa fa-wechat fa-2x"></i></a></li>-->
+                <!--<li><a href="#"><i class="fa fa-weibo fa-2x"></i></a></li>-->
+                <!--<li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>-->
+                <!--<li><a href="#"><i class="fa fa-rss fa-2x"></i></a></li>-->
+            </ul>
+        </div>
+    </section>
+    <!--footer end-->
+</div>
+<!--wrapper end-->
+<!--modernizr js-->
+<script type="text/javascript" src="{% static "js/modernizr.custom.26633.js" %}"></script>
+<!--jquary min js-->
+<script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
+<script src="{% static "js/bootstrap.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.gridrotator.js" %}"></script>
+<!--for custom jquary-->
+<script src="{% static "js/custom.js" %}"></script>
+<!--for placeholder jquary-->
+<script type="text/javascript" src="{% static "js/jquery.placeholder.js" %}"></script>
+<!--for menu jquary-->
+<script type="text/javascript" src="{% static "js/stickUp.js" %}"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $(document).ready(function () {
+            //enabling stickUp on the '.navbar-wrapper' class
+            $('.navbar-wrapper').stickUp({
+                parts: {
+                    0: 'banner',
+                    1: 'aboutme',
+                    2: 'technical',
+                    3: 'exprience',
+                    4: 'education',
+                    5: 'protfolio',
+                    6: 'contact'
+                },
+                itemClass: 'menuItem',
+                itemHover: 'active',
+                topMargin: 'auto'
+            });
+        });
+
+        $(".navbar.navbar-inverse.navbar-static-top a").click(function () {
+            $(".navbar-collapse").addClass("hideClass");
+        });
+
+
+        $(".navbar.navbar-inverse.navbar-static-top a").click(function () {
+            $(".navbar-collapse").addClass("collapse");
+        });
+
+
+        $(".navbar.navbar-inverse.navbar-static-top a").click(function () {
+            $(".navbar-collapse").removeClass("in");
+        });
+
+        $(".navbar-toggle").click(function () {
+            $(".navbar-collapse").removeClass("hideClass");
+        });
+
+
+    });
+</script>
+<!--for portfoli filter jquary-->
+<script src="{% static "js/jquery.isotope.js" %}" type="text/javascript"></script>
+<!--for portfoli lightbox -->
+<link type="text/css" rel="stylesheet" id="theme" href="{% static "css/jquery-ui-1.8.16.custom.css" %}">
+<link type="text/css" rel="stylesheet" href="{% static "css/lightbox.min.css" %}">
+<script type="text/javascript" src="{% static "js/jquery.ui.widget.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.ui.rlightbox.js" %}"></script>
+<!--for skill chat jquary-->
+<script src="{% static "js/jquery.easing.min.js" %}"></script>
+<script src="{% static "js/jquery.easypiechart.js" %}"></script>
+
+<script src="{% static "js/animate/js/TweenLite.min.js" %}"></script>
+<script src="{% static "js/animate/js/EasePack.min.js" %}"></script>
+<script src="{% static "js/animate/js/rAF.js" %}"></script>
+<script src="{% static "js/animate/js/bg_drafting.js" %}"></script>
+
+
+<!--contact form js-->
+<script type="text/javascript" src="{% static "js/jquery.contact.js" %}"></script>
+</body>
+</html>

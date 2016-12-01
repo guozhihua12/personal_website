@@ -1,0 +1,11 @@
+web:
+    restart: always
+    build: .
+    ports:
+        - "8000:8080"
+    environment:
+        - DJANGO_SETTINGS_MODULE=personal_website.settings
+    volumes:
+        - .:/opt/project
+        - /tmp/logs/nobody/info:/var/log/nobody/info
+        - /tmp/logs/nobody/error:/var/log/nobody/error
