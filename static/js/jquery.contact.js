@@ -10,7 +10,7 @@
                 $('#message').hide();
 
                 $('#submit')
-                    .before('<img src="images/ajax-loader.gif" class="contact-loader" />')
+                    .before('<img src="/static/images/ajax-loader.gif" class="contact-loader" />')
                     .attr('disabled', 'disabled');
 
                 $.post(action, {

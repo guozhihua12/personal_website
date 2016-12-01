@@ -1,4 +1,5 @@
-Django==1.4.16
+Django==1.8.14
 gevent==1.1.2
 greenlet==0.4.10
 gunicorn==19.6.0
+email==4.0.2
